@@ -15,7 +15,7 @@ services:
         - ./mapproxy_configuration:/multi_mapproxy
         - mapproxy_cache_data:/cache_data
       ports:
-        - "8080:8080"
+        - "55555:55555"
       restart: on-failure
       environment:
         - PRODUCTION=true

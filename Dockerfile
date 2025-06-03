@@ -37,7 +37,7 @@ RUN pip3 --disable-pip-version-check install -r /settings/requirements.txt
 RUN apt-get -y --purge autoremove  \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-EXPOSE 8080
+EXPOSE 55555
 
 ADD build_data/uwsgi.ini /settings/uwsgi.default.ini
 ADD build_data/multi_mapproxy.py /multi_mapproxy.py
